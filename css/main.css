@@ -1,0 +1,72 @@
+@import url('font-fira-sans.css');
+@import url('font-fira-mono.css');
+@import url('font-roboto-condensed.css');
+
+
+body, button, input, optgroup, select, textarea {
+     /*font-family: 'Fira Sans', sans-serif;*/
+     font-family: 'Roboto Condensed', courier;
+     font-weight: 400;
+     color: #595e59;
+}
+
+code {
+    font-family: "Lucida Console", Monaco, monospace;
+    font-size: .8em;
+}
+
+.diagram {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    width: 800px;
+    align-items: center;
+}
+
+.diagram > .col1 { grid-column: 1/3; text-align: center; }
+.diagram > .col2 { grid-column: 4/6; text-align: center; }
+.diagram > .col3 { grid-column: 7/9; text-align: center; }
+
+.item {
+    text-align: left;
+    border-radius: 7px;
+    border: 3px solid;
+    padding: 6px 14px;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+}
+
+.item:before {
+    content: "";
+    border-top: 1px solid;
+    border-left: 1px solid;
+    height: 40%;
+    width: 4%;
+    display: block;
+    border-radius: 3px 0 0 0;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+}
+
+.item:after{
+    content: "";
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    border: 3px solid;
+    position: absolute;
+    background-color: #fff;
+    transform: translate(8px, -6px);
+    right: 0;
+    top: 50%;
+}
+
+.item > .title {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.item > .description {
+    font-size: .8em;
+}
