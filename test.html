@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="utf-8">
+<title>ГИХГ - МТХэлтэс</title>
+
+<link rel="stylesheet" type="text/css" href="http://127.0.0.1:8001/static/font/fira_sans_extra_condensed.css"/>
+<link rel="stylesheet" type="text/css" href="css/main.css"/>
+
+
+</head>
+<body>
+
+    <div class="diagram"></div>
+
+    <input type="button" id="save-diagram" value="Save diagram"/>
+    <input type="button" id="load-diagram" value="Load diagram"/>
+    <textarea id="diagram-data">{"boxes":[{"id":"box_1","x":10,"y":10,"width":100,"height":60,"text":"Hello"},{"id":"box_2","x":200,"y":100,"width":100,"height":60,"text":"World"},{"id":"box_3","x":200,"y":200,"width":100,"height":60,"text":"World"}],"connections":[{"src":"box_1","dst":"box_2"},{"src":"box_1","dst":"box_3"}]}</textarea>
+
+
+    <script src="js/require.js"></script>
+    <script src="js/test.js"></script>
+
+</body>
+</html>

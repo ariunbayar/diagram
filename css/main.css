@@ -1,18 +1,7 @@
-@import url('font-fira-sans.css');
-@import url('font-fira-mono.css');
-@import url('font-roboto-condensed.css');
-
-
 body, button, input, optgroup, select, textarea {
-     /*font-family: 'Fira Sans', sans-serif;*/
-     font-family: 'Roboto Condensed', courier;
+     font-family: 'Fira Sans Extra Condensed';
      font-weight: 400;
      color: #595e59;
-}
-
-code {
-    font-family: "Lucida Console", Monaco, monospace;
-    font-size: .8em;
 }
 
 .diagram {
